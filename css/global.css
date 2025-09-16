@@ -85,6 +85,17 @@ h2 {
   transform: translateX(0);
 }
 
+/* evita que padding / width estoure a largura da tela */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* evita rolagem horizontal indesejada enquanto depuramos */
+html, body {
+  overflow-x: hidden;
+}
+
+
 @media(max-width: 768px) {
 .section-titulo-azul {
   display: flex;
