@@ -1,0 +1,25 @@
+.qs-conteudo {
+    display: flex;
+    margin-top: 64px;
+}
+
+@media(max-width: 768px) {
+    .qs-container {
+        padding: 16px;
+        padding-top: 32px;
+    }
+
+    .qs-conteudo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+    .qs-conteudo {
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+  }
+}
+

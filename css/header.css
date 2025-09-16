@@ -1,0 +1,263 @@
+.header-container {
+    display: flex;
+    gap: 128px;
+    align-items: center;
+}
+
+.header-bg {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 16px 24px;
+}
+
+.header-li {
+    list-style: none;
+    color: #151515;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 1rem;
+    font-weight: medium;
+    padding: 16px 24px;
+    border-radius: 6px;
+}
+
+.header-li:hover {
+    background-color: #353487;
+    color: #ffffff;
+}
+
+.header-ul {
+    display: flex;
+    gap: 0;
+}
+
+/* Header Mobile */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+
+.header .logo img {
+    height: 40px; 
+}
+
+.header .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    color: #000; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header .nav.active {
+    transform: scaleY(1);
+}
+
+
+.header .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .nav ul li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.header .nav ul li:hover {
+    background-color: #353487;
+    color: #ffffff;
+}
+
+/* ===============================
+   HEADER MOBILE-FIRST
+   =============================== */
+
+/* Header Mobile */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.header {
+  display: flex; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.header .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header .nav.active {
+    transform: scaleY(1);
+}
+
+.header .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .nav ul li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.header .nav ul li:hover {
+    background-color: #353487;
+    color: #ffffff;
+}
+
+.header-bg {
+    display: none;
+}
+
+/* ===============================
+   TABLET / PEQUENOS DESKTOPS
+   =============================== */
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .header-bg {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .header .menu-toggle {
+        display: flex;
+    }
+
+    .header .nav {
+        flex-direction: column;
+        width: 220px;
+    }
+}
+
+/* ===============================
+   DESKTOP GRANDE (>1280px)
+   =============================== */
+
+@media (min-width: 1281px) {
+    .header-bg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 32px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .header {
+        display: none;
+    }
+
+    .header-bg nav {
+        display: flex;
+    }
+
+    .header-bg nav ul {
+        display: flex;
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .header-bg nav ul li {
+        border: none;
+    }
+
+    .header-bg nav ul a {
+        text-decoration: none;
+        color: #000;
+    }
+}
