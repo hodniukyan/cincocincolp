@@ -21,7 +21,11 @@
   <body>
     <header class="header-bg container">
       <div class="header-container">
-        <img src="img/vetores/logo header.png" alt="logo cinco cinco" />
+        <img
+          src="img/vetores/logo header.png"
+          data-contrast="img/vetores/logo-contrast.png"
+          alt="logo cinco cinco"
+        />
         <nav aria-label="Navegação principal">
           <ul class="header-ul">
             <a href="#main-bg"><li class="header-li">Home</li></a>
@@ -29,6 +33,9 @@
             <a href="#np-bg"><li class="header-li">Nossa proposta</li></a>
             <a href="#nd-bg"><li class="header-li">Nossos diferenciais</li></a>
             <a href="#contato-bg"><li class="header-li">Contato</li></a>
+            <button class="contrast-toggle" aria-label="contrast">
+              <span class="material-symbols-outlined">contrast</span>
+            </button>
           </ul>
         </nav>
       </div>
@@ -36,11 +43,20 @@
 
     <header class="header">
       <div class="logo">
-        <img src="img/vetores/logo header.png" alt="Logo Cinco Cinco" />
+        <img
+          src="img/vetores/logo header.png"
+          data-contrast="img/vetores/logo-contrast.png"
+          alt="Logo Cinco Cinco"
+        />
       </div>
-      <button class="menu-toggle" aria-label="Abrir menu">
-        <span class="material-symbols-outlined">dehaze</span>
-      </button>
+      <div class="header-icones">
+        <button class="contrast-toggle" aria-label="contrast">
+          <span class="material-symbols-outlined">contrast</span>
+        </button>
+        <button id="btn-menu" class="menu-toggle" aria-label="Abrir menu">
+          <span class="material-symbols-outlined">dehaze</span>
+        </button>
+      </div>
       <nav class="nav" id="menu">
         <ul class="header-ul">
           <a href="#main-bg"><li class="header-li">Home</li></a>
@@ -61,6 +77,7 @@
         <div class="main-img">
           <img
             src="img/vetores/logo main.png"
+            data-contrast="img/vetores/18.png"
             alt="Logo principal da Cinco Cinco"
           />
         </div>
@@ -178,7 +195,7 @@
             <span class="material-symbols-outlined" aria-hidden="true"
               >call</span
             >
-            <p class="textos">(65) 99999-9777</p>
+            <p class="textos">(65) 98118-0518</p>
           </div>
         </div>
       </div>

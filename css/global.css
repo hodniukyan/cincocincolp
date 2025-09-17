@@ -99,6 +99,58 @@ body {
   overflow-x: hidden;
 }
 
+/* MODO CONTRASTE */
+body.contrast-mode {
+  background-color: #050426; /* fundo escuro */
+  color: #ffffff; /* cor padrão de texto */
+}
+
+body.contrast-mode .textos,
+body.contrast-mode h1,
+body.contrast-mode h2,
+body.contrast-mode p,
+body.contrast-mode li,
+body.contrast-mode span {
+  color: #ffffff !important;
+}
+
+/* Header e seções com fundo branco -> ficam transparentes */
+body.contrast-mode .header,
+body.contrast-mode .header-bg,
+body.contrast-mode .section-azul,
+body.contrast-mode .section-laranja,
+body.contrast-mode .footer-container {
+  background-color: #050426 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.contrast-mode .material-symbols-outlined {
+  color: #ffffff;
+}
+
+body.contrast-mode .header .nav {
+  background-color: #050426;
+  border: #ffffff 2px solid;
+}
+
+body.contrast-mode ul li::marker,
+body.contrast-mode .nd-span {
+  color: #ffffff;
+}
+
+body.contrast-mode .linha-laranja,
+body.contrast-mode .linha-azul {
+  background-color: #ffffff;
+}
+
+body.contrast-mode .header .nav ul li:hover {
+  background-color: #9d9dbe;
+}
+
+body.contrast-mode .header-li:hover {
+  background-color: #9d9dbe;
+}
+
 @media (max-width: 768px) {
   .section-titulo-azul {
     display: flex;

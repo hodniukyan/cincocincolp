@@ -12,6 +12,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.contrast-toggle .material-symbols-outlined {
+  color: #353487;
+}
+
 .header-container {
   display: flex;
   gap: 128px;
@@ -44,6 +48,20 @@
   gap: 0;
 }
 
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
 /* ===============================
    HEADER MOBILE (PADRÃO VISÍVEL)
    =============================== */
@@ -63,11 +81,30 @@
   box-sizing: border-box;
 }
 
+.header-icones {
+  gap: 16px;
+  display: flex;
+}
+
 .header .logo img {
   height: 40px;
 }
 
 .header .menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.header .contrast-toggle {
   background: none;
   border: none;
   cursor: pointer;
