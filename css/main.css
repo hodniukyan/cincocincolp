@@ -1,92 +1,91 @@
 .main-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #main-bg {
-    padding-top: 128px;
+  padding-top: 128px;
 }
 
 .main-textos {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .main-h1 {
-    color: #353487;
-    font-size: 6rem;
-    font-weight: bold;
-    margin: 0;
+  color: #353487;
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 span {
-    color: #DC2B0F;
+  color: #dc2b0f;
 }
 
 .main-sbt {
-    font-family: 'Metropolis', sans-serif;
-    font-size: 3rem;
-    font-weight: medium;
-    color: #151515;
-    margin: 0;
+  font-family: "Metropolis", sans-serif;
+  font-size: 3rem;
+  font-weight: medium;
+  color: #151515;
+  margin: 0;
 }
 
-.main-container img{
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+.main-container img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 30px;
-    }
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
 }
 
-@media(max-width: 768px) {
-    .main-container {
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        order: 1;
-        gap: 32px;
-    }
+@media (max-width: 768px) {
+  .main-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    order: 1;
+    gap: 32px;
+  }
 
-    #main-bg {
-        padding-top: 32px;
-    }
+  #main-bg {
+    padding-top: 32px;
+  }
 
-    .main-h1 {
-        font-size: 2.5rem;
-    }
+  .main-h1 {
+    font-size: 2.5rem;
+  }
 
-    .main-sbt {
-        font-size: 1.5rem;
-    }
+  .main-sbt {
+    font-size: 1.5rem;
+  }
 
-    .main-textos {
-        order: 2;
-    }
+  .main-textos {
+    order: 2;
+  }
 
-    .main-container img{
-        order: 1;
-    }
+  .main-container img {
+    order: 1;
+  }
 
-    .main-container img {
-        width: 100%;
-        max-width: 283px;
-        height: auto;
-    }
+  .main-container img {
+    width: 100%;
+    max-width: 283px;
+    height: auto;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
-
   /* MAIN */
   .main-container {
     flex-direction: row;

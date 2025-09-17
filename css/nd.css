@@ -1,15 +1,15 @@
 .nd-conteudo {
-    display: flex;
-    margin-top: 64px;
+  display: flex;
+  margin-top: 64px;
 }
 
 .nd-topico {
-    font-family: 'Metropolis', sans-serif;
-    font-size: 2rem;
-    font-weight: lighter;
-    color: #151515;
-    margin: 0;
-    line-height: 1.5;
+  font-family: "Metropolis", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #151515;
+  margin: 0;
+  line-height: 1.5;
 }
 
 ul li::marker {
@@ -18,56 +18,56 @@ ul li::marker {
 }
 
 .nd-span {
-    color: #353487;
-    font-weight: bold;
+  color: #353487;
+  font-weight: bold;
 }
 
 .nd-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-@media(max-width: 768px) {
-    .nd-container {
-        padding: 16px;
-        padding-top: 32px;
-    }
+@media (max-width: 768px) {
+  .nd-container {
+    padding: 16px;
+    padding-top: 32px;
+  }
 
-    .nd-topico {
-        font-size: 1rem;
-    }
+  .nd-topico {
+    font-size: 1rem;
+  }
 
-    .nd-conteudo {
-        display: flex;
-        flex-direction: column;
-    }
+  .nd-conteudo {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .np-container img {
-        width: 100%;
-        max-width: 361px;
-        height: auto;
-        margin: 0;
-    }
+  .np-container img {
+    width: 100%;
+    max-width: 361px;
+    height: auto;
+    margin: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .nd-topico {
-        font-size: 1.125rem;
-        line-height: 1.6;
-    }
+  .nd-topico {
+    font-size: 1.375rem;
+    line-height: 1.6;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1279px) {
-    .nd-conteudo {
-        flex-direction: row;
-        gap: 32px;
-        align-items: center;
+@media (min-width: 768px) and (max-width: 1279px) {
+  .nd-conteudo {
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
   }
 
-    .nd-container img {
-        width: 40%;
-        max-width: 361px;
-        height: auto;
+  .nd-container img {
+    width: 40%;
+    max-width: 361px;
+    height: auto;
   }
 }

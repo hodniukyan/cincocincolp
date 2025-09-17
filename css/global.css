@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Metropolis';
-  src: url('caminho/para/metropolis-regular.woff2') format('woff2'),
-       url('caminho/para/metropolis-regular.woff') format('woff');
+  font-family: "Metropolis";
+  src: url("caminho/para/metropolis-regular.woff2") format("woff2"),
+    url("caminho/para/metropolis-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Metropolis';
-  src: url('caminho/para/metropolis-bold.woff2') format('woff2'),
-       url('caminho/para/metropolis-bold.woff') format('woff');
+  font-family: "Metropolis";
+  src: url("caminho/para/metropolis-bold.woff2") format("woff2"),
+    url("caminho/para/metropolis-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -20,8 +20,8 @@ body {
 }
 
 h1 {
-    font-family: 'Metropolis', sans-serif;
-    font-size: 700;
+  font-family: "Metropolis", sans-serif;
+  font-size: 700;
 }
 
 .container {
@@ -35,13 +35,13 @@ h1 {
 }
 
 h2 {
-    font-family: 'Metropolis', sans-serif;
-    font-size: 2.5rem;
-    font-weight: medium;
-    color: #151515;
-    margin: 0;
-    white-space: nowrap;
-  }
+  font-family: "Metropolis", sans-serif;
+  font-size: 2.5rem;
+  font-weight: medium;
+  color: #151515;
+  margin: 0;
+  white-space: nowrap;
+}
 
 .linha-azul {
   background-color: #353487;
@@ -56,21 +56,22 @@ h2 {
 }
 
 .linha-laranja {
-  background-color: #DC2B0F;
+  background-color: #dc2b0f;
   height: 8px;
   flex: 1;
 }
 
 .textos {
-    font-family: 'Metropolis', sans-serif;
-    font-size: 2rem;
-    font-weight: lighter;
-    color: #151515;
-    margin: 0;
-    line-height: 1.5;
+  font-family: "Metropolis", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #151515;
+  margin: 0;
+  line-height: 1.5;
 }
 
-.section-azul, .section-laranja {
+.section-azul,
+.section-laranja {
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -86,49 +87,51 @@ h2 {
 }
 
 /* evita que padding / width estoure a largura da tela */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* evita rolagem horizontal indesejada enquanto depuramos */
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
-
-@media(max-width: 768px) {
-.section-titulo-azul {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
-
-.linha-azul {
-  background-color: #353487;
-  height: 4px;
-  flex: 1;
-}
-
-.section-titulo-laranja {
+@media (max-width: 768px) {
+  .section-titulo-azul {
     display: flex;
     gap: 24px;
     align-items: center;
-}
+  }
 
-h2 {
-    font-size: 1.25rem;
-}
-
-.textos {
-  font-size: 1rem;
-}
-
-.linha-laranja {
-    background-color: #DC2B0F;
+  .linha-azul {
+    background-color: #353487;
     height: 4px;
     flex: 1;
-}
+  }
+
+  .section-titulo-laranja {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .textos {
+    font-size: 1rem;
+    color: #151515;
+  }
+
+  .linha-laranja {
+    background-color: #dc2b0f;
+    height: 4px;
+    flex: 1;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -137,7 +140,7 @@ h2 {
   }
 
   h1 {
-    font-size: 2.25rem; 
+    font-size: 2.25rem;
     font-weight: 700;
   }
 
@@ -147,7 +150,7 @@ h2 {
   }
 
   .textos {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     line-height: 1.6;
   }
 
@@ -158,7 +161,7 @@ h2 {
 
   .linha-azul,
   .linha-laranja {
-    height: 6px; 
+    height: 6px;
   }
 
   /* Ajuste de grid para tablets */
@@ -172,12 +175,12 @@ h2 {
 
   .section-azul img,
   .section-laranja img {
-    max-width: 40%; 
+    max-width: 40%;
   }
 
   .section-azul .textos,
   .section-laranja .textos {
-    max-width: 60%; 
+    max-width: 60%;
   }
 
   .section-azul,
@@ -198,4 +201,3 @@ h2 {
     max-width: 60%;
   }
 }
-
