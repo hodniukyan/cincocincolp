@@ -22,3 +22,11 @@
     align-items: center;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .qs-conteudo {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+}
