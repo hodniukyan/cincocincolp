@@ -34,13 +34,29 @@ h1 {
   align-items: center;
 }
 
-h2 {
+h4 {
   font-family: "Metropolis", sans-serif;
   font-size: 2.5rem;
-  font-weight: medium;
-  color: #151515;
+  font-weight: 500;
+  color: #000000;
   margin: 0;
   white-space: nowrap;
+}
+
+h3 {
+  font-family: "Metropolis", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Metropolis", sans-serif;
+  font-size: 4rem;
+  font-weight: medium;
+  color: #000000;
+  margin: 0;
 }
 
 .linha-azul {
@@ -65,7 +81,7 @@ h2 {
   font-family: "Metropolis", sans-serif;
   font-size: 2rem;
   font-weight: lighter;
-  color: #151515;
+  color: #000000;
   margin: 0;
   line-height: 1.5;
 }
@@ -101,16 +117,19 @@ body {
 
 /* MODO CONTRASTE */
 body.contrast-mode {
-  background-color: #050426; /* fundo escuro */
+  background-color: #000000; /* fundo escuro */
   color: #ffffff; /* cor padrão de texto */
 }
 
 body.contrast-mode .textos,
 body.contrast-mode h1,
 body.contrast-mode h2,
+body.contrast-mode h3,
+body.contrast-mode h4,
 body.contrast-mode p,
 body.contrast-mode li,
-body.contrast-mode span {
+body.contrast-mode span,
+body.constrat-mode label {
   color: #ffffff !important;
 }
 
@@ -120,16 +139,37 @@ body.contrast-mode .header-bg,
 body.contrast-mode .section-azul,
 body.contrast-mode .section-laranja,
 body.contrast-mode .footer-container {
-  background-color: #050426 !important;
+  background-color: #000000 !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.contrast-mode #investir-bg {
+  background-color: #050426 !important;
+}
+
+body.contrast-mode .investir-btn {
+  background-color: transparent;
+  border: #ffffff solid 3px;
+}
+
+body.contrast-mode .investir-btn:hover {
+  background-color: #9d9dbe;
 }
 
 body.contrast-mode .material-symbols-outlined {
   color: #ffffff;
 }
 
-body.contrast-mode .header .nav {
+body.contrast-mode .btn-cadastrar {
   background-color: #050426;
+}
+
+body.contrast-mode .btn-cadastrar:hover {
+  background-color: #1f1e66;
+}
+
+body.contrast-mode .header .nav {
+  background-color: #000000;
   border: #ffffff 2px solid;
 }
 
@@ -144,11 +184,20 @@ body.contrast-mode .linha-azul {
 }
 
 body.contrast-mode .header .nav ul li:hover {
-  background-color: #9d9dbe;
+  background-color: #b3b3b3;
 }
 
 body.contrast-mode .header-li:hover {
-  background-color: #9d9dbe;
+  background-color: #b3b3b3;
+}
+
+body.constrat-mode input {
+  background-color: transparent !important;
+}
+
+body.contrast-mode .main-forms-forms {
+  background-color: transparent !important;
+  border: #ffffff 2px solid;
 }
 
 @media (max-width: 768px) {
@@ -170,7 +219,7 @@ body.contrast-mode .header-li:hover {
     align-items: center;
   }
 
-  h2 {
+  h4 {
     font-size: 1.25rem;
   }
 
@@ -197,6 +246,11 @@ body.contrast-mode .header-li:hover {
   }
 
   h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h4 {
     font-size: 1.75rem;
     font-weight: 600;
   }

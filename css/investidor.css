@@ -1,0 +1,135 @@
+#investir-bg {
+  background-color: #f7d9be;
+}
+
+.investir-conteudo {
+  display: flex;
+  margin-top: 64px;
+  gap: 64px;
+}
+
+.investir-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding: 16px;
+  justify-content: center;
+}
+
+.investir-div .investir-h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Metropolis", sans-serif;
+  color: #000000;
+  margin: 0;
+}
+
+.investir-div .investir-p {
+  font-size: 2rem;
+  font-weight: medium;
+  font-family: "Metropolis", sans-serif;
+}
+
+.investir-div .investir-btn {
+  padding: 32px 16px;
+  font-family: "Metropolis", sans-serif;
+  color: #ffffff;
+  background-color: #dc2b0f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  width: 621px;
+  height: auto;
+  cursor: pointer;
+}
+
+.investir-div .investir-btn:hover {
+  background-color: #851205;
+}
+
+@media (max-width: 768px) {
+  .investir-container {
+    padding: 16px;
+    padding-top: 32px;
+  }
+
+  .investir-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .investir-div {
+    padding: 0;
+    margin: 0;
+  }
+
+  .investir-div .investir-h3 {
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  .investir-div .investir-p {
+    font-size: 1.25rem;
+    margin-bottom: 32px;
+  }
+
+  .investir-div .investir-btn {
+    padding: 16px;
+    font-size: 1rem;
+    width: auto;
+  }
+
+  .investir-h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .investir-conteudo {
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .investir-container img {
+    width: 40%;
+    max-width: 361px;
+    height: auto;
+  }
+
+  .investir-div .investir-h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .investir-div .investir-p {
+    font-size: 2rem;
+  }
+
+  .investir-div .investir-btn {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .investir-conteudo {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .investir-div .investir-h3 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .investir-div .investir-p {
+    font-size: 2rem;
+  }
+
+  .investir-div .investir-btn {
+    width: auto;
+  }
+}

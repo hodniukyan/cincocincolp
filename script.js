@@ -54,3 +54,17 @@ document.addEventListener("DOMContentLoaded", () => {
 [...document.querySelectorAll("*")]
   .filter((el) => el.offsetWidth > document.documentElement.clientWidth)
   .map((el) => ({ tag: el.tagName, cls: el.className, w: el.offsetWidth }));
+
+/* SCRIPT PRA VOLTAR PAGINA */
+document.addEventListener("DOMContentLoaded", () => {
+  const logos = document.querySelectorAll("header img"); // seleciona todas as logos dentro de header
+
+  logos.forEach((logo) => {
+    logo.style.cursor = "pointer"; // muda cursor pra indicar que é clicável
+    logo.addEventListener("click", () => {
+      window.location.href = "index.html"; // redireciona pra home
+    });
+  });
+});
+
+/* SOLUÇÃO QUEBRA DE PÁGINA HEADER */

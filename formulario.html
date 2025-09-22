@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinco Cinco</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/formulario.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header class="header-bg container">
+      <div class="header-container">
+        <img
+          src="img/vetores/logo header.png"
+          data-contrast="img/vetores/logo-contrast.png"
+          alt="logo cinco cinco"
+        />
+        <nav aria-label="Navegação principal">
+          <ul class="header-ul">
+            <a href="index.html#main-bg"><li class="header-li">Home</li></a>
+            <a href="index.html#qs-bg"
+              ><li class="header-li">Quem somos?</li></a
+            >
+            <a href="index.html#np-bg"
+              ><li class="header-li">Nossa proposta</li></a
+            >
+            <a href="index.html#nd-bg"
+              ><li class="header-li">Nossos diferenciais</li></a
+            >
+            <a href="index.html#investir-bg"
+              ><li class="header-li">Investir</li></a
+            >
+            <a href="index.html#contato-bg"
+              ><li class="header-li">Contato</li></a
+            >
+            <button class="contrast-toggle" aria-label="contrast">
+              <span class="material-symbols-outlined">contrast</span>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <header class="header">
+      <div class="logo">
+        <img
+          src="img/vetores/logo header.png"
+          data-contrast="img/vetores/logo-contrast.png"
+          alt="Logo Cinco Cinco"
+        />
+      </div>
+      <div class="header-icones">
+        <button class="contrast-toggle" aria-label="contrast">
+          <span class="material-symbols-outlined">contrast</span>
+        </button>
+        <button id="btn-menu" class="menu-toggle" aria-label="Abrir menu">
+          <span class="material-symbols-outlined">dehaze</span>
+        </button>
+      </div>
+      <nav class="nav" id="menu">
+        <ul class="header-ul">
+          <a href="index.html#main-bg"><li class="header-li">Home</li></a>
+          <a href="index.html#qs-bg"><li class="header-li">Quem somos?</li></a>
+          <a href="index.html#np-bg"
+            ><li class="header-li">Nossa proposta</li></a
+          >
+          <a href="index.html#nd-bg"
+            ><li class="header-li">Nossos diferenciais</li></a
+          >
+          <a href="index.html#investir-bg"
+            ><li class="header-li">Investir</li></a
+          >
+          <a href="index.html#contato-bg"><li class="header-li">Contato</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-forms-bg">
+      <div class="main-forms-container container">
+        <div class="main-forms-conteudo">
+          <div class="main-forms-textos">
+            <h2 class="main-forms-titulo">
+              Construa o <br />amanhã com a
+              <span class="span-titulo">Cinco Cinco</span>
+            </h2>
+            <p class="main-forms-p">
+              Transforme o transporte no Brasil junto com a Cinco Cinco. Invista
+              em inovação, tecnologia e confiança para impulsionar um setor que
+              conecta empresas, motoristas e oportunidades.
+            </p>
+            <div class="main-contato-forms">
+              <div class="main-contato-textos">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >mail</span
+                >
+                <p class="main-forms-textos">suporte@cinquentaecinco.com.br</p>
+              </div>
+              <div class="main-contato-textos">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >call</span
+                >
+                <p class="main-forms-textos">(65) 98118-0518</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-forms-forms">
+            <div>
+              <label for="nome">Nome completo / Razão Social</label>
+              <input type="text" name="nome" id="nome" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div>
+              <label for="cpf">CPF ou CNPJ</label>
+              <input type="number" name="cpf" id="cpf" />
+            </div>
+            <div>
+              <label for="telefone">Telefone (com DDD)</label>
+              <input type="tel" name="telefone" id="telefone" />
+            </div>
+            <div>
+              <label for="valor-invest">Valor do Investimento</label>
+              <input type="number" name="valor-invest" id="valor-invest" />
+            </div>
+            <button class="btn-cadastrar">Cadastrar Investimento</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

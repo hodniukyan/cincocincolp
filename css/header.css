@@ -199,6 +199,10 @@ nav button {
   .header .menu-toggle {
     font-size: 28px;
   }
+
+  .header a {
+    font-size: 128px;
+  }
 }
 
 /* ===============================
